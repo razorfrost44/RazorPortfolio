@@ -6,11 +6,13 @@ html {
     text-align: left;
     max-width: 90%;
     margin: auto;
+    line-height: 1.4;
+    letter-spacing: 0.025rem;
 }
 
 @media only screen and (max-width: 1000px) {
     html {
-        margin: 0px;
+        margin: 0;
         max-width: 100%;
     }
 }
@@ -44,6 +46,7 @@ a {
     font-weight: bold;
     text-decoration: none;
     margin: 0.3125rem;
+    cursor: pointer;
 }
 
 nav {
@@ -97,12 +100,17 @@ header {
     grid-area: header;
 }
 
-header h1 {
+#maintitle {
     display: inline;
 }
 
+#maintitle a {
+    margin: 0;
+    padding: 0;
+}
+
 @media only screen and (max-width: 600px) {
-    header h1 {
+    #maintitle {
         display: block;
     }
 }
@@ -112,12 +120,67 @@ main {
     grid-area: main;
 }
 
+/* Tabs Start */
+
+.tabbed-list {
+    background-color: #F6EAF6;
+    width: 70%;
+    padding: 1%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .tabbed-list {
+        width: 100%;
+    }
+}
+
+.tab-list {
+    width: 95%;
+}
+
+.tab-list li {
+    background-color: #E8F9F8;
+    list-style: none;
+    border-bottom: 0.125rem solid black;
+    border-top: 0.125rem solid black;
+    width: 25%;
+}
+
+.tab-list li:first-child {
+    border-left: 0.125rem solid black;
+}
+
+.tab-list li:last-child {
+    border-right: 0.125rem solid black;
+}
+
+.tab-list li a {
+    display: block;
+}
+
+.tab-list li.active {
+    background-color: #ffeed9;
+}
+
+.tab-panel {
+    display: none;
+    clear: both;
+    padding: 0 0.3125rem;
+    width: 99%;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+/* Tabs end */
+
 #portrait {
     display: inline;
     float: right;
-    max-width: 31.25rem;
-    max-height: 24.1875rem;
-    margin: 2rem 0 2rem 2rem;
+    max-width: 26.7857rem;
+    max-height: 20.7321rem;
+    margin: 2rem 0 1rem 2rem;
 }
 
 @media only screen and (max-width: 800px) {
@@ -131,7 +194,7 @@ main {
 
 #listofskills p {
     margin: 0 0.2rem;
-    border: 1px solid #365f2c;
+    border: 0.0625rem solid #365f2c;
     padding: 0.5rem;
 }
 

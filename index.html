@@ -9,7 +9,7 @@
     </head>
     <body>
         <header>
-            <h1>Ray Gottsch</h1>
+            <h1 id="maintitle"><a href="./index.html">Ray Gottsch</a></h1>
             <nav>
                 <a href="#about">About Me</a>
                 <a href="#projects">Projects</a>
@@ -29,12 +29,34 @@
             </section>
             <section id="projects">
                 <h2>Projects</h2>
-                <section id="tabbed-section">
-                    <article class="tabbed-content">
-                        <h3>Codecademy Full-Stack Engineer</h3>
+                <article class="tabbed-list">
+                    <ul class="tab-list flex-container">
+                        <li class="active"><a class="tab-control" href="#tab-1">Full-Stack</a></li>
+                        <li><a class="tab-control" href="#tab-2">Reading</a></li>
+                        <li><a class="tab-control" href="#tab-3">Practice</a></li>
+                    </ul>
+                    <div class="tab-panel active" id="tab-1">
+                        <h3>Codecademy Full-Stack Engineer Course</h3>
                         <p>I am currently studying JavaScript, CSS, HTML, and how they fit together to build whole applications on the web. You can check out my projects for this on my GitHub page. All of the Codecademy projects I have been working on are listed there.</p>
-                    </article>
-                </section>
+                    </div>
+                    <div class="tab-panel" id="tab-2">
+                        <h3>Books!</h3>
+                        <p>One can never get away from the ever growing list of books and material you need to read. I have challenged myself to tackle a variety of topics in the same context as my other projects. Some of these were recommended by the Codecademy team. They have been massively instructive so far. Thank you to the authors and teams that have published these!</p>
+                        <ul>
+                            <li><p>HTML and CSS: Design and Build Websites by Jon Duckett</p></li>
+                            <li><p>JavaScript and JQuery: Interactive Front-End Web Development by Jon Duckett</p></li>
+                            <li><p>PHP & MySQL: Server-side Web Development by Jon Duckett</p></li>
+                            <li><p>Cracking the Coding Interview by Gayle Laakmann McDowell</p></li>
+                            <li><p>The Pragmatic Programmer by David Thomas and Andrew Hunt</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-panel" id="tab-3">
+                        <h3>Coding Bat</h3>
+                        <p>I practice my skills every day using this website (<a href="https://codingbat.com/java">CodingBat.com</a>). It has a huge array of challenges.</p>
+                        <p>I love this site because it allows me to code in a similar way to when I was in college.</p>
+                        <p>Eventually, I will move on to other practice forms. However, this site has given me a great refresher course on the topics covered in school.</p>
+                    </div>
+                </article>
             </section>
             <section id="skills">
                 <h2>Skills</h2>
@@ -52,9 +74,22 @@
                     <p>Windows 2000 - Windows 10</p>
                 </article>
             </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Have any interesting projects or professional inquiries? I would love to hear from you!</p>
+                <ul>
+                    <li>Email:<a href="mailto:origin.razorfrost@gmail.com">origin.razorfrost@gmail.com</a></li>
+                    <li>Linkedin:<a href="https://www.linkedin.com/in/ray-gottsch-52954b121/">ray-gottsch-52954b121</a></li>
+                    <li>GitHub:<a href="https://github.com/razorfrost44">razorfrost44</a></li>
+                    <li>Codecademy:<a href="https://www.codecademy.com/profiles/razorfrost44">razorfrost44</a></li>
+                </ul>
+            </section>
         </main>
         <footer>
             <p>Passion in every byte!</p>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="./js/jquery-3.6.0.min.js">\x3C/script>')</script>
+            <script src="./js/tabs.js"></script>
         </footer>
     </body>
 </html>
